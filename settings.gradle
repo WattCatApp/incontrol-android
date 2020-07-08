@@ -1,0 +1,3 @@
+include ':libincontrol'
+include ':app'
+rootProject.name = "LibInControl"
