@@ -5,12 +5,21 @@ import com.google.gson.annotations.SerializedName;
 public class UserInfo {
 
     @SerializedName("userId")
-    String userId;
+    private final String userId;
 
     @SerializedName("loginName")
-    String loginName;
+    private final String loginName;
+
+    public UserInfo(String userId, String loginName) {
+        this.userId = userId;
+        this.loginName = loginName;
+    }
 
     public String getUserId() {
         return userId;
+    }
+
+    public String getLoginName() {
+        return loginName;
     }
 }
